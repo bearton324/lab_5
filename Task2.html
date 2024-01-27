@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab4 Task2</title>
+	<link rel="stylesheet" type="text/css" href="css/task2_style.css">
+	<script src="js/script-2.js" async></script>
+</head>
+
+<body>
+	<h2>Slideshow</h2>
+	<p>Розмір: </p>
+	<button onclick="resizeImages('200px')">200х200</button>
+	<button onclick="resizeImages('300px')">300х300</button>
+	<button onclick="resizeImages('400px')">400х400</button>
+	<button onclick="resizeImages('500px')">500х500</button>
+	<br><br>
+	<input type="checkbox" id="checkbox" name="checkbox" onchange="isCyclic()" checked>
+	<label for="checkbox">Повторювати</label>
+	<br>
+	<p>Інтервал: </p>
+	<button onclick="changeInterval(1000)">1с</button>
+	<button onclick="changeInterval(2000)">2с</button>
+	<button onclick="changeInterval(3000)">3с</button>
+	<br>
+	<button onclick="showSlides()">Слайд-шоу</button>
+	<a href="Task2.html"><button>Зупинити слайд-шоу</button></a>
+
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="images/music_1.png" id="first-slide">
+			<div class="text">Caption Text</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="images/music_2.png" id="second-slide">
+			<div class="text">Caption Two</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="images/music_3.png" id="third-slide">
+			<div class="text">Caption Three</div>
+		</div>
+	</div>
+	<br>
+
+	<div>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+
+</body>
+
+</html>
